@@ -168,132 +168,29 @@
 "League of Legends Player","I want you to act as a person who plays a lot of League of Legends. Your rank in the game is diamond, which is above the average but not high enough to be considered a professional. You are irrational, get angry and irritated at the smallest things, and blame your teammates for all of your losing games. You do not go outside of your room very often,besides for your school/work, and the occasional outing with friends. If someone asks you a question, answer it honestly, but do not share much interest in questions outside of League of Legends. If someone asks you a question that isn't about League of Legends, at the end of your response try and loop the conversation back to the video game. You have few desires in life besides playing the video game. You play the jungle role and think you are better than everyone else because of it."
 "Restaurant Owner","I want you to act as a Restaurant Owner. When given a restaurant theme, give me some dishes you would put on your menu for appetizers, entrees, and desserts. Give me basic recipes for these dishes. Also give me a name for your restaurant, and then some ways to promote your restaurant. The first prompt is ""Taco Truck"""
 "Architectural Expert","I am an expert in the field of architecture, well-versed in various aspects including architectural design, architectural history and theory, structural engineering, building materials and construction, architectural physics and environmental control, building codes and standards, green buildings and sustainable design, project management and economics, architectural technology and digital tools, social cultural context and human behavior, communication and collaboration, as well as ethical and professional responsibilities. I am equipped to address your inquiries across these dimensions without necessitating further explanations."
-PYTHON
-"Write a Python code that [sorts/filters] a list of [objects] based on [attribute]."
-◦Example: “Write a Python code that sorts a list of dictionaries based on the ‘age’ attribute."
-"Generate a Python function that [transforms] a list of [values] using [function/algorithm]."
-◦Example: “Generate a Python function that transforms a list of strings into lowercase using a list comprehension."
-"Create a Python script that [reads/writes] data from/to a [file format] file using [library]."
-◦Example: “Create a Python script that writes data to a JSON file using the json library."
-"Write a Python code to [perform operation] on a [data structure] using [algorithm]."
-◦Example: “Write a Python code to reverse a linked list using iterative method."
-"Generate a Python function to [process/modify] a DataFrame using [pandas function]."
-◦Example: “Generate a Python function to drop NaN values from a DataFrame using pandas."
-"Create a Python class that represents a [concept] with methods for [operations]."
-◦Example: “Create a Python class that represents a bank account with methods for deposit and withdrawal."
-"Write a Python script that [fetches/processes] data from an API using [requests/urllib]."
-◦Example: “Write a Python script that fetches weather data from an API using requests."
-"Generate a Python function to [aggregate/summarize] data from a list of [values]."
-◦Example: “Generate a Python function to calculate the average of a list of integers."
-"Create a Python script that [manipulates] strings to [achieve specific format]."
-◦Example: “Create a Python script that formats phone numbers to international format."
-"Write a Python function that [filters/extracts] elements from a list based on [criteria]."
-◦Example: “Write a Python function that extracts even numbers from a list of integers."
-"Generate a Python code to [implement] a [sorting/searching] algorithm on a list of [elements]."
-◦Example: “Generate a Python code to implement quicksort on a list of numbers."
-"Create a Python function that [performs computation] using [mathematical/algorithmic] techniques."
-◦Example: “Create a Python function that calculates the greatest common divisor of two numbers using the Euclidean algorithm."
-"Write a Python code that [performs text analysis] on a [text data] using [library]."
-◦Example: “Write a Python code that performs sentiment analysis on a list of reviews using nltk."
-"Generate a Python script to [automate a task] using [a specific Python library]."
-◦Example: “Generate a Python script to automate sending emails using smtplib."
-"Create a Python class with properties and methods for managing [type of resource]."
-◦Example: “Create a Python class with properties and methods for managing a library of books."
-"Write a Python code to [connect to and query] a database using [SQL library]."
-◦Example: “Write a Python code to connect to a SQLite database and execute a query."
-"Generate a Python function that [applies a transformation] to a list of [values] and returns the result."
-◦Example: “Generate a Python function that applies a square root transformation to a list of numbers."
-"Create a Python script to [generate/parse] data in a specific [file format]."
-◦Example: “Create a Python script to parse XML data using the ElementTree library."
-"Write a Python function that [analyzes] a list of [values] to find [specific information]."
-◦Example: “Write a Python function that analyzes a list of student grades to find the top performer."
-"Generate a Python code that [handles exceptions] for [specific tasks] using try-except blocks."
-◦Example: “Generate a Python code that handles file not found exceptions when reading from a file.”
-"Create a Python class with methods to [perform operations] on [data types]."
-◦Example: “Create a Python class with methods to perform matrix operations on 2D arrays.”
-"Write a Python script that [processes] images using [image processing library]."
-◦Example: “Write a Python script that processes images to convert them to grayscale using OpenCV.”
-"Generate a Python function to [clean/prepare] data for analysis using [pandas/numpy]."
-◦Example: “Generate a Python function to clean missing values from a DataFrame using pandas.”
-"Create a Python script that [performs file operations] like [reading, writing, copying] files."
-◦Example: “Create a Python script that copies a file from one directory to another.”
-"Write a Python code to [calculate statistical measures] like [mean, median, mode] for a dataset."
-◦Example: “Write a Python code to calculate the mean of a list of numbers.”
-"Generate a Python function that [processes] a list of [objects] based on [criteria]."
-◦Example: “Generate a Python function that removes duplicates from a list of integers.”
-"Create a Python script to [visualize data] using [data visualization library]."
-◦Example: “Create a Python script to visualize data with a bar chart using matplotlib.”
-"Write a Python code that [encrypts/decrypts] data using [cryptographic library]."
-◦Example: “Write a Python code that encrypts text using the cryptography library.”
-"Generate a Python function to [parse and extract] information from [a text file]."
-◦Example: “Generate a Python function to parse and extract email addresses from a text file.”
-"Create a Python script that [scrapes data] from a website using [web scraping library]."
-◦Example: “Create a Python script that scrapes data from a website using BeautifulSoup.”
-"Write a Python code that [manages] a collection of [data types] with [custom logic]."
-◦Example: “Write a Python code that manages a collection of student records with search and update functionalities.”
-"Advanced Prompts for Complex Problems"
-You will come across difficult problems that cannot be solved by using simple code, that is the reason why, as you go deeper into using Python. Considering these complex problems, ChatGPT can be a great help when it comes to providing code to solve them. Python is a very crucial programming language in data science field as well. Here are more than 50 complex and professional ChatGPT prompts for Python to help you in various Python development issues. Every prompt is unique, which means that you can adjust them to best suit the desired outcome.
-These advanced prompts are designed to be flexible and customizable, allowing you to tailor them to the specific challenges you face in Python programming.
-“Write a Python script that performs [data analysis task] on a dataset using [Pandas/NumPy]”
-“Create a Python function that implements [algorithm] for solving [specific problem]”
-“Generate Python code to apply [machine learning algorithm] on [dataset] using scikit-learn”
-“Write a Python program to optimize [objective] using [optimization technique]”
-“Create a Python script that performs [statistical analysis] on [data type]”
-“Generate Python code to perform [task] using a neural network with [TensorFlow/Keras]”
-“Write a Python function that simulates [complex system] using [Monte Carlo/other method]”
-“Create a Python script to scrape data from [website] using [BeautifulSoup/Scrapy]”
-“Generate Python code to analyze time-series data with [specific method] using [library]”
-“Write a Python program to solve [optimization problem] using [Genetic Algorithm/other method]”
-“Create a Python script that performs image processing tasks like [task] using OpenCV”
-“Generate Python code to interact with [API/service] and perform [task]”
-“Write a Python function that implements [cryptographic algorithm] for [task]”
-“Create a Python program to simulate [physical phenomenon] using [appropriate method]”
-“Generate Python code to build a chatbot for [purpose] using [library]”
-“Write a Python script to automate [task] in [application] using [library]”
-“Create a Python function that performs [complex mathematical computation] using [NumPy/SciPy]”
-“Generate Python code to conduct sentiment analysis on [text data] using [NLP library]”
-“Write a Python script to model and predict [financial data] using [method]”
-“Create a Python program to develop a [game/interactive tool] using [Pygame/other library]”
-“Generate Python code to perform data clustering on [dataset] using [clustering algorithm]”
-“Write a Python function that performs parallel computing tasks using [multiprocessing]”
-“Create a Python script that visualizes [data type] using [Matplotlib/Seaborn]”
-“Generate Python code to analyze network data using [Graph Theory/network library]”
-“Write a Python program to solve [partial differential equations] using [numerical method]”
-“Create a Python function to handle large datasets with [Hadoop/Spark]”
-“Generate Python code to perform deep learning tasks on [dataset] using [PyTorch/TensorFlow]”
-“Write a Python script to implement [data structure] for [specific problem]”
-“Create a Python program to optimize a neural network for [task] using [optimization technique]”
-“Generate Python code to perform geospatial analysis using [GeoPandas]”
-“Write a Python function that implements a custom [loss function/activation function] for [neural network]”
-“Create a Python script that performs batch processing of [data type] using [Dask/other library]”
-“Generate Python code to perform real-time data analysis on [streaming data] using [library]”
-“Write a Python program to develop a [web application] using [Flask/Django]”
-“Create a Python function to solve [complex combinatorial problem] using [specific algorithm]”
-“Generate Python code to perform natural language processing tasks like [task] using [library]”
-“Write a Python script to perform predictive modeling on [dataset] using [machine learning model]”
-“Create a Python program to simulate [biological process] using [method]”
-“Generate Python code to perform anomaly detection on [data] using [technique]”
-“Write a Python function that generates synthetic data for [use case] using [method]”
-“Create a Python script to handle and analyze big data with [library]”
-“Generate Python code to implement a recommender system for [application] using [algorithm]”
-“Write a Python program to model [complex system] dynamics using [mathematical method]”
-“Create a Python function to perform feature selection for [machine learning task]”
-“Generate Python code to automate testing of [software] using [testing framework]”
-“Write a Python script to perform distributed computing on [problem] using [library]”
-“Create a Python program to generate and analyze [graph structures] using [network library]”
-“Generate Python code to implement a [custom machine learning algorithm] for [specific problem]”
-“Write a Python function to perform optimization tasks on [model] using [gradient descent]”
-“Create a Python script to perform advanced data wrangling on [dataset] using [Pandas/NumPy]”
-“Generate Python code to integrate machine learning models with [web framework]”
-“Write a Python program to perform spectral analysis on [signal data] using [library]”
-“Create a Python function to perform sentiment analysis on [social media data] using [NLP library]”
-“Generate Python code to implement a [Bayesian model] for [problem] using [PyMC3/other library]”
-“Write a Python script to automate the deployment of [application] using [DevOps tool]”
-“Create a Python program to develop a [mobile application] using [Kivy/other library]”
-“Generate Python code to perform hyperparameter tuning for [machine learning model]”
-“Write a Python function to visualize complex data using [advanced plotting library]”
-“Create a Python function to solve [complex integrals] using [numerical integration method]”
-“Generate Python code to implement [reinforcement learning] for [problem] using [OpenAI Gym]”
-“Write a Python script to perform big data analytics on [dataset] using [Hadoop/Spark]”
-“Create a Python program to simulate [quantum mechanics] using [appropriate method]”
-Act as a professional Python programmer with highly skilled machine learning and AI, And your a canbus specialist for bosch so u can optimize canbus pattern recognition using kmeans, and i need a table to add some pids i already know what they are, and you can learn from that, i need  way to add all the can id's i know to a list with bytes so u can learn from that.
+"Write Python code","Write a Python code that sorts a list of dictionaries based on the 'age' attribute."
+"Create Python script","Create a Python script that writes data to a JSON file using the json library."
+"Write Python code","Write a Python code to reverse a linked list using iterative method."
+"Generate Python function","Generate a Python function to drop NaN values from a DataFrame using pandas."
+"Create Python class","Create a Python class that represents a bank account with methods for deposit and withdrawal."
+"Write Python script","Write a Python script that fetches weather data from an API using requests."
+"Generate Python function","Generate a Python function to calculate the average of a list of integers."
+"Create Python script","Create a Python script that formats phone numbers to international format."
+"Write Python function","Write a Python function that extracts even numbers from a list of integers."
+"Generate Python code","Generate a Python code to implement quicksort on a list of numbers."
+"Create Python function","Create a Python function that calculates the greatest common divisor of two numbers using the Euclidean algorithm."
+"Write Python code","Write a Python code that performs sentiment analysis on a list of reviews using nltk."
+"Generate Python script","Generate a Python script to automate sending emails using smtplib."
+"Create Python class","Create a Python class with properties and methods for managing a library of books."
+"Write Python code","Write a Python code to connect to a SQLite database and execute a query."
+"Generate Python function","Generate a Python function that applies a square root transformation to a list of numbers."
+"Create Python script","Create a Python script to parse XML data using the ElementTree library."
+"Write Python function","Write a Python function that analyzes a list of student grades to find the top performer."
+"Generate Python code","Generate a Python code that handles file not found exceptions when reading from a file."
+"Create Python class","Create a Python class with methods to perform matrix operations on 2D arrays."
+"Python Machine Learning AI Canbus","Act as a professional Python programmer with highly skilled machine learning and AI, And your a canbus specialist for bosch so u can optimize canbus pattern recognition using kmeans, and i need a table to add some pids i already know what they are, and you can learn from that, i need  way to add all the can id's i know to a list with bytes so u can learn from that.
+"I want you to act as a Python code improver", "who can review and analyze existing code, identify areas for optimization, and suggest changes to enhance performance, readability, and maintainability. Share insights on refactoring techniques, code organization, and following established coding standards to ensure a clean and consistent codebase. Offer guidance on improving error handling, optimizing resource usage, and implementing best practices to minimize potential bugs and security vulnerabilities. My first request is ‘Review the following Python code snippet and suggest improvements to enhance its efficiency and readability: '{code here}’"
+"Act as a Code Teacher","I want you to act as a code teacher, who can provide clear and concise explanations of programming concepts, techniques, and best practices across various languages, such as Python, JavaScript, Java, or C++. Share insights on understanding fundamental programming principles, mastering specific languages, and utilizing essential tools and resources to enhance learning. Offer guidance on building projects, honing problem-solving skills, and staying up-to-date with the latest trends and developments in the software industry. My first request is ‘Explain the concept of object-oriented programming and how it is implemented in Python, using an example to illustrate the key concepts of classes, objects, inheritance, and polymorphism.’"
+
+
+
