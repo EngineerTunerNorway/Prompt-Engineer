@@ -1,6 +1,9 @@
 #
-# Prompt Engineer V1.0 Made By xeQted 2025.
+# Prompt Engineer v1.0 Made by xeQter 2025.
 #
+# This is a work in progress. So expect bugs.
+#
+# You have to make your own list woth saved prompts. Mine is private.
 
 import sys
 import json
@@ -41,7 +44,6 @@ class Prompt:
 
 class EnhancementLibrary:
     def __init__(self):
-        # Enhanced style modifiers with more comprehensive visual terms
         self.style_modifiers = [
             # Visual Quality Terms
             "Hyper Realistic", "Photorealistic", "Ultra Detailed", "High Resolution",
@@ -69,15 +71,9 @@ class EnhancementLibrary:
             "Ambient Occlusion", "Global Illumination", "Ray Traced Reflections",
             "Subsurface Scattering", "Volumetric Fog", "Particle Effects",
             "Motion Blur", "Bokeh Effect", "Film Grain", "Color Grading",
-            "LUT Applied", "Tone Mapping", "Exposure Bracketing",
-            
-            # New additions for enhanced visual quality
-            "Ultra Cinematic", "IMAX Quality", "Dolby Vision", "Professional Grade",
-            "Commercial Quality", "Editorial Standard", "Fashion Photography Style",
-            "Documentary Realism", "Fine Art Quality", "Gallery Exhibition Level"
+            "LUT Applied", "Tone Mapping", "Exposure Bracketing"
         ]
         
-        # Enhanced technical terms with crypto, trading, and programming focus
         self.technical_terms = [
             # Core Technology
             "Machine Learning", "Neural Network", "Deep Learning", "Algorithm",
@@ -106,22 +102,9 @@ class EnhancementLibrary:
             "Behavior-Driven Development", "Domain-Driven Design", "Event Sourcing",
             "CQRS Pattern", "Hexagonal Architecture", "Onion Architecture",
             "Repository Pattern", "Factory Pattern", "Observer Pattern",
-            "Dependency Injection", "Inversion of Control", "Aspect-Oriented Programming",
-            
-            # Cryptocurrency & Blockchain Terms
-            "Blockchain Technology", "Cryptocurrency Analysis", "DeFi Protocol",
-            "Smart Contract", "Web3 Integration", "Token Economics", "NFT Marketplace",
-            "Consensus Mechanism", "Proof of Stake", "Proof of Work", "Layer 2 Solutions",
-            "Cross-Chain Bridge", "Yield Farming", "Liquidity Mining", "DAO Governance",
-            
-            # Trading & Financial Terms
-            "Algorithmic Trading", "High-Frequency Trading", "Market Making",
-            "Risk Management", "Portfolio Optimization", "Quantitative Analysis",
-            "Technical Analysis", "Fundamental Analysis", "Backtesting",
-            "Monte Carlo Simulation", "Value at Risk", "Sharpe Ratio"
+            "Dependency Injection", "Inversion of Control", "Aspect-Oriented Programming"
         ]
         
-        # Enhanced creative terms with broader artistic scope
         self.creative_terms = [
             # Original Creative Terms
             "Innovative", "Creative", "Original", "Unique", "Artistic", "Imaginative",
@@ -146,15 +129,10 @@ class EnhancementLibrary:
             "Impressionistic", "Expressionistic", "Cubist", "Surrealist", "Dadaist",
             "Minimalist", "Maximalist", "Brutalist", "Art Nouveau", "Art Deco",
             "Bauhaus", "Gothic", "Renaissance", "Baroque", "Rococo",
-            "Neoclassical", "Romantic", "Contemporary", "Postmodern", "Deconstructivist",
-            
-            # New creative additions
-            "Psychedelic", "Glitch Art", "Vaporwave", "Synthwave", "Digital Art",
-            "Generative Art", "Interactive Media", "Virtual Reality", "Augmented Reality",
-            "Motion Graphics", "3D Rendering", "Photomanipulation", "Digital Painting"
+            "Neoclassical", "Romantic", "Contemporary", "Postmodern", "Deconstructivist"
         ]
         
-        # Enhanced reasoning frameworks
+        # New category: Reasoning and Logic Frameworks
         self.reasoning_frameworks = [
             "Chain of Thought", "Tree of Thoughts", "Step-by-Step Analysis",
             "Logical Deduction", "Inductive Reasoning", "Abductive Reasoning",
@@ -165,15 +143,10 @@ class EnhancementLibrary:
             "Hypothesis Testing", "Scientific Method", "Experimental Design",
             "Statistical Analysis", "Data-Driven Insights", "Evidence-Based Reasoning",
             "First Principles Thinking", "Reverse Engineering", "Decomposition Method",
-            "Synthesis Approach", "Holistic Perspective", "Multi-Dimensional Analysis",
-            
-            # Advanced reasoning additions
-            "Monte Carlo Analysis", "Bayesian Reasoning", "Game Theory Application",
-            "Decision Tree Analysis", "Sensitivity Analysis", "What-If Scenarios",
-            "Predictive Modeling", "Pattern Recognition", "Trend Analysis"
+            "Synthesis Approach", "Holistic Perspective", "Multi-Dimensional Analysis"
         ]
         
-        # Enhanced output formatting
+        # New category: Output Formatting and Structure
         self.output_formatting = [
             "Structured Response", "Bulleted List", "Numbered Steps", "Hierarchical Format",
             "Table Format", "JSON Structure", "XML Format", "Markdown Syntax",
@@ -182,15 +155,10 @@ class EnhancementLibrary:
             "Recommendations", "Next Steps", "Implementation Plan", "Timeline Format",
             "Progress Tracking", "Milestone Markers", "Phase-by-Phase", "Categorical Organization",
             "Prioritized List", "Ranked Order", "Chronological Sequence", "Logical Flow",
-            "Visual Diagram", "Flowchart Format", "Mind Map Structure", "Comparison Chart",
-            
-            # New formatting additions
-            "Code Documentation", "API Reference", "Tutorial Format", "FAQ Style",
-            "Troubleshooting Guide", "Best Practices Guide", "Quick Reference",
-            "Cheat Sheet Format", "Interactive Tutorial", "Video Script Format"
+            "Visual Diagram", "Flowchart Format", "Mind Map Structure", "Comparison Chart"
         ]
         
-        # Enhanced tone and voice modifiers
+        # New category: Tone and Voice Modifiers
         self.tone_voice = [
             "Professional", "Conversational", "Technical", "Academic", "Business Formal",
             "Friendly", "Authoritative", "Collaborative", "Instructional", "Explanatory",
@@ -200,15 +168,10 @@ class EnhancementLibrary:
             "Expert-Level", "Consultative", "Advisory", "Mentoring", "Coaching",
             "Objective", "Subjective", "Neutral", "Opinionated", "Balanced",
             "Cautious", "Confident", "Optimistic", "Realistic", "Pragmatic",
-            "Strategic", "Tactical", "Operational", "Executive", "Managerial",
-            
-            # New tone additions
-            "Humorous", "Satirical", "Sarcastic", "Witty", "Playful",
-            "Serious", "Formal", "Casual", "Enthusiastic", "Calm",
-            "Urgent", "Patient", "Encouraging", "Challenging", "Supportive"
+            "Strategic", "Tactical", "Operational", "Executive", "Managerial"
         ]
         
-        # Enhanced quality and precision modifiers
+        # New category: Quality and Precision Modifiers
         self.quality_precision = [
             "Precise", "Accurate", "Exact", "Specific", "Detailed", "Thorough",
             "Comprehensive", "Complete", "Exhaustive", "In-Depth", "Granular",
@@ -217,71 +180,35 @@ class EnhancementLibrary:
             "Validated", "Verified", "Tested", "Proven", "Evidence-Based",
             "Research-Backed", "Data-Driven", "Fact-Checked", "Peer-Reviewed",
             "Industry-Validated", "Best-Practice", "Standard-Compliant",
-            "Quality-Assured", "Performance-Optimized", "Efficiency-Focused",
-            
-            # New quality additions
-            "Error-Free", "Bug-Free", "Production-Ready", "Enterprise-Grade",
-            "Scalable Solution", "Robust Implementation", "Fault-Tolerant",
-            "High-Performance", "Optimized Code", "Clean Architecture"
+            "Quality-Assured", "Performance-Optimized", "Efficiency-Focused"
         ]
         
-        # Enhanced industry-specific terms with new categories
+        # New category: Industry-Specific Terms
         self.industry_terms = {
             "Healthcare": [
                 "Clinical Excellence", "Patient-Centered", "Evidence-Based Medicine",
                 "Healthcare Innovation", "Medical Best Practices", "Regulatory Compliance",
-                "HIPAA Compliant", "FDA Approved", "Clinical Trial", "Peer-Reviewed",
-                "Telemedicine", "Electronic Health Records", "Medical Imaging",
-                "Pharmaceutical Research", "Biomedical Engineering"
+                "HIPAA Compliant", "FDA Approved", "Clinical Trial", "Peer-Reviewed"
             ],
             "Finance": [
                 "Risk Management", "Regulatory Compliance", "Financial Modeling",
                 "Portfolio Optimization", "Due Diligence", "Audit Trail",
-                "SOX Compliance", "Basel III", "Stress Testing", "Quantitative Analysis",
-                "Derivatives Trading", "Credit Risk", "Market Risk", "Operational Risk",
-                "FinTech Innovation", "Robo-Advisory", "Digital Banking"
+                "SOX Compliance", "Basel III", "Stress Testing", "Quantitative Analysis"
             ],
             "Technology": [
                 "Digital Transformation", "Innovation Pipeline", "Agile Methodology",
                 "DevOps Culture", "Cloud-First", "API-First", "Mobile-First",
-                "Security-by-Design", "Privacy-by-Design", "Scalable Architecture",
-                "Microservices", "Containerization", "Kubernetes", "Docker",
-                "Continuous Integration", "Continuous Deployment", "Infrastructure as Code"
+                "Security-by-Design", "Privacy-by-Design", "Scalable Architecture"
             ],
             "Marketing": [
                 "Brand Strategy", "Customer Journey", "Omnichannel Experience",
                 "Data-Driven Marketing", "Performance Marketing", "Conversion Optimization",
-                "Customer Segmentation", "Personalization", "Engagement Strategy", "ROI-Focused",
-                "Social Media Marketing", "Content Marketing", "Email Marketing",
-                "Influencer Marketing", "Affiliate Marketing", "Growth Hacking"
+                "Customer Segmentation", "Personalization", "Engagement Strategy", "ROI-Focused"
             ],
             "Education": [
                 "Pedagogical Excellence", "Learning Outcomes", "Curriculum Design",
                 "Assessment Strategy", "Student-Centered", "Evidence-Based Teaching",
-                "Differentiated Instruction", "Inclusive Education", "Digital Literacy",
-                "E-Learning", "Blended Learning", "Gamification", "Microlearning",
-                "Learning Management System", "Educational Technology"
-            ],
-            "Cryptocurrency": [
-                "Blockchain Analysis", "DeFi Protocols", "Smart Contracts", "Token Economics",
-                "Yield Farming", "Liquidity Mining", "Cross-Chain", "Layer 2",
-                "Consensus Mechanisms", "Cryptographic Security", "Wallet Integration",
-                "Trading Algorithms", "Market Analysis", "Risk Management",
-                "Regulatory Compliance", "KYC/AML", "Decentralized Governance"
-            ],
-            "Trading": [
-                "Technical Analysis", "Fundamental Analysis", "Quantitative Trading",
-                "Algorithmic Strategies", "Risk Management", "Portfolio Theory",
-                "Market Microstructure", "High-Frequency Trading", "Options Strategies",
-                "Futures Trading", "Forex Analysis", "Commodity Trading",
-                "Statistical Arbitrage", "Mean Reversion", "Momentum Trading"
-            ],
-            "E-commerce": [
-                "Conversion Optimization", "Customer Experience", "A/B Testing",
-                "Shopping Cart Optimization", "Payment Processing", "Inventory Management",
-                "Supply Chain", "Logistics Optimization", "Customer Retention",
-                "Personalization Engine", "Recommendation Systems", "Mobile Commerce",
-                "Social Commerce", "Marketplace Integration", "Dropshipping"
+                "Differentiated Instruction", "Inclusive Education", "Digital Literacy"
             ]
         }
         
@@ -351,6 +278,75 @@ class EnhancementLibrary:
                 "Create detailed technical analysis:", "Develop comprehensive solutions:"
             ],
             
+            "Grok3": [
+                # Grok3 Specific Optimization
+                "Think outside the box:", "Provide unconventional insights:",
+                "Challenge conventional wisdom:", "Offer creative solutions:",
+                "Think disruptively:", "Provide innovative perspectives:",
+                "Break traditional boundaries:", "Explore novel approaches:",
+                "Generate breakthrough ideas:", "Think exponentially:",
+                "Provide paradigm-shifting insights:", "Challenge assumptions:",
+                "Offer contrarian viewpoints:", "Think systematically different:",
+                "Provide revolutionary concepts:", "Generate transformative ideas:",
+                
+                # Grok3 Advanced Techniques
+                "Apply lateral thinking:", "Use unconventional methods:",
+                "Combine disparate concepts:", "Synthesize unexpected connections:",
+                "Generate emergent solutions:", "Think in multiple dimensions:",
+                "Provide meta-analysis:", "Challenge the premise:",
+                "Reframe the problem:", "Think recursively:",
+                "Apply systems thinking:", "Use analogical reasoning:",
+                "Generate counterintuitive insights:", "Provide non-linear solutions:"
+            ],
+            
+            "GPT-4": [
+                # GPT-4 Advanced Capabilities
+                "Advanced reasoning", "Multi-step solution", "Holistic overview",
+                "Edge-case handling", "Explain assumptions",
+                "Provide comprehensive analysis:", "Use advanced reasoning:",
+                "Apply sophisticated logic:", "Consider complex interactions:",
+                "Provide nuanced understanding:", "Handle ambiguous scenarios:",
+                "Generate robust solutions:", "Account for uncertainties:",
+                "Provide detailed reasoning:", "Use meta-cognitive strategies:",
+                "Apply domain expertise:", "Integrate multiple knowledge areas:",
+                "Provide expert-level analysis:", "Use professional judgment:"
+            ],
+            
+            "Midjourney": [
+                # Midjourney Parameters
+                "--creative", "--hd", "--ar 16:9", "--ar 3:2", "--ar 1:1",
+                "style raw", "--v 6", "--stylize", "--uplight", "--upbeta",
+                "--test", "--testp", "--creative", "--iw", "--no",
+                
+                # Midjourney Advanced Techniques
+                "hyperrealistic photography", "cinematic lighting", "ultra detailed",
+                "8k resolution", "professional photography", "studio lighting",
+                "dramatic shadows", "golden hour", "volumetric lighting",
+                "depth of field", "bokeh effect", "macro photography",
+                "wide angle lens", "telephoto lens", "fisheye perspective",
+                "aerial view", "bird's eye view", "worm's eye view"
+            ],
+            
+            "DALL-E": [
+                # DALL-E Optimization
+                "highly detailed description", "style filter", "higher resolution",
+                "creative composition", "focused prompt", "artistic style",
+                "professional quality", "studio lighting", "detailed textures",
+                "realistic materials", "accurate proportions", "vivid colors",
+                "dramatic contrast", "atmospheric perspective", "fine details",
+                "photorealistic rendering", "artistic interpretation",
+                "creative visualization", "imaginative concept"
+            ],
+            
+            "Llama": [
+                # Llama Optimization
+                "Few-shot examples", "Prompt tuning", "Context window optimization",
+                "Template-based prompting", "Instruction following",
+                "Task-specific formatting", "Clear objective statement",
+                "Explicit constraints", "Structured input format",
+                "Expected output format", "Quality criteria specification"
+            ],
+            
             "Universal": [
                 # Cross-Platform Techniques
                 "Be specific and detailed:", "Provide clear instructions:",
@@ -364,7 +360,7 @@ class EnhancementLibrary:
             ]
         }
         
-        # Enhanced prompt techniques
+        # New category: Advanced Prompt Engineering Techniques
         self.prompt_techniques = [
             "Few-Shot Learning", "Zero-Shot Learning", "Chain-of-Thought",
             "Tree of Thoughts", "Self-Consistency", "Program-Aided Language Models",
@@ -374,11 +370,7 @@ class EnhancementLibrary:
             "Automatic Prompt Engineering", "Gradient-Free Optimization",
             "Prompt Tuning", "P-Tuning", "Prefix Tuning", "LoRA Adaptation",
             "Instruction Tuning", "RLHF Training", "Constitutional Training",
-            "Multi-Modal Prompting", "Cross-Modal Reasoning", "Modal Bridging",
-            
-            # New technique additions
-            "Role-Based Prompting", "Persona-Driven Responses", "Context Injection",
-            "Template-Based Generation", "Dynamic Prompting", "Adaptive Questioning"
+            "Multi-Modal Prompting", "Cross-Modal Reasoning", "Modal Bridging"
         ]
 
     def get_suggestions(self, platform: str, category: str) -> List[str]:
@@ -397,12 +389,7 @@ class EnhancementLibrary:
             "Technical": self.technical_terms,
             "Business": self.quality_precision,
             "Academic": self.reasoning_frameworks,
-            "General": self.style_modifiers,
-            "Python": self.technical_terms,
-            "PineScript": self.technical_terms,
-            "Cryptocurrency": self.industry_terms.get("Cryptocurrency", []),
-            "Stocks": self.industry_terms.get("Trading", []),
-            "E-commerce": self.industry_terms.get("E-commerce", [])
+            "General": self.style_modifiers
         }
         
         if category in category_mappings:
@@ -586,22 +573,11 @@ class PromptEditor(QWidget):
             "Universal", "ChatGPT", "Claude", "Gemini", "Grok3", 
             "GPT-4", "Midjourney", "DALL-E", "Llama"
         ])
-        
-        # CHANGED: Category dropdown instead of text field
-        self.category_combo = QComboBox()
-        self.category_combo.setEditable(True)  # Allow typing custom categories
-        self.category_combo.addItems([
-            "General", "Creative", "Technical", "Business", "Academic",
-            "Python", "PineScript", "Cryptocurrency", "Stocks", "Canbus",
-            "E-commerce", "Gambling", "AI/ML", "Data Science", "Web Development",
-            "Mobile Development", "Game Development", "DevOps", "Cybersecurity",
-            "Blockchain", "Trading Algorithms", "Market Analysis", "Content Creation",
-            "SEO/SEM", "Social Media", "Email Marketing", "Analytics"
-        ])
+        self.category_edit = QLineEdit()
         
         form_layout.addRow("Title:", self.title_edit)
         form_layout.addRow("Platform:", self.platform_combo)
-        form_layout.addRow("Category:", self.category_combo)
+        form_layout.addRow("Category:", self.category_edit)
         
         basic_layout.addLayout(form_layout)
         
@@ -638,8 +614,7 @@ class PromptEditor(QWidget):
         
         self.industry_combo = QComboBox()
         self.industry_combo.addItems([
-            "General", "Healthcare", "Finance", "Technology", "Marketing", 
-            "Education", "Cryptocurrency", "Trading", "E-commerce"
+            "General", "Healthcare", "Finance", "Technology", "Marketing", "Education", "Programming"
         ])
         self.industry_combo.currentTextChanged.connect(self.update_enhancements)
         
@@ -862,8 +837,7 @@ class PromptEditor(QWidget):
         self.current_prompt = prompt
         self.title_edit.setText(prompt.title)
         self.platform_combo.setCurrentText(prompt.platform)
-        # MODIFIED: Use combo box instead of text field for category
-        self.category_combo.setCurrentText(prompt.category)
+        self.category_edit.setText(prompt.category)
         self.content_edit.setPlainText(prompt.content)
         self.tags_edit.setText(", ".join(prompt.tags))
     
@@ -871,8 +845,7 @@ class PromptEditor(QWidget):
         self.current_prompt = None
         self.title_edit.clear()
         self.platform_combo.setCurrentIndex(0)
-        # MODIFIED: Clear combo box instead of text field
-        self.category_combo.setCurrentIndex(0)
+        self.category_edit.clear()
         self.content_edit.clear()
         self.tags_edit.clear()
         self.enhancement_preview.clear()
@@ -894,8 +867,7 @@ class PromptEditor(QWidget):
             prompt = self.current_prompt
             prompt.title = self.title_edit.text().strip()
             prompt.platform = self.platform_combo.currentText()
-            # MODIFIED: Get category from combo box instead of text field
-            prompt.category = self.category_combo.currentText()
+            prompt.category = self.category_edit.text().strip()
             prompt.content = self.content_edit.toPlainText().strip()
             prompt.tags = tags
             prompt.modified_at = datetime.now().isoformat()
@@ -905,8 +877,7 @@ class PromptEditor(QWidget):
                 title=self.title_edit.text().strip(),
                 content=self.content_edit.toPlainText().strip(),
                 platform=self.platform_combo.currentText(),
-                # MODIFIED: Get category from combo box instead of text field
-                category=self.category_combo.currentText(),
+                category=self.category_edit.text().strip(),
                 created_at=datetime.now().isoformat(),
                 modified_at=datetime.now().isoformat(),
                 tags=tags
@@ -969,7 +940,7 @@ class MainWindow(QMainWindow):
         self.load_prompts()
     
     def setup_ui(self):
-        self.setWindowTitle("Prompt Engineer V1.0 - By xeQted (C) 2025")
+        self.setWindowTitle("Prompt Management System")
         self.setGeometry(100, 100, 1400, 900)
         
         central_widget = QWidget()
@@ -995,20 +966,14 @@ class MainWindow(QMainWindow):
         filter_layout = QHBoxLayout()
         self.filter_combo = QComboBox()
         self.filter_combo.addItems([
-            "All", "ChatGPT", "Claude", "Universal", "Gemini", "Grok3",
+            "All", "Universal", "ChatGPT", "Claude", "Gemini", "Grok3",
             "GPT-4", "Midjourney", "DALL-E", "Llama"
         ])
         self.filter_combo.currentTextChanged.connect(self.filter_prompts)
         
-        # MODIFIED: Updated category filter with new categories
         self.category_filter = QComboBox()
         self.category_filter.addItems([
-            "All Categories", "General", "Creative", "Technical", "Business", "Academic",
-            "Python", "PineScript", "Cryptocurrency", "Stocks", "Canbus",
-            "E-commerce", "Gambling", "AI/ML", "Data Science", "Web Development",
-            "Mobile Development", "Game Development", "DevOps", "Cybersecurity",
-            "Blockchain", "Trading Algorithms", "Market Analysis", "Content Creation",
-            "SEO/SEM", "Social Media", "Email Marketing", "Analytics"
+            "All Categories", "Creative", "Technical", "Business", "Academic", "General"
         ])
         self.category_filter.currentTextChanged.connect(self.filter_by_category)
         
@@ -1108,9 +1073,36 @@ class MainWindow(QMainWindow):
             "Business Strategy": "Develop a comprehensive strategy for [BUSINESS_GOAL]. Consider market conditions, competitive landscape, and resource constraints.",
             "Code Review": "Review the following code for [LANGUAGE]. Check for best practices, performance optimization, security vulnerabilities, and maintainability.",
             "Data Analysis": "Analyze the provided data to identify patterns, trends, and insights. Use statistical methods and provide visual representations where appropriate.",
-            "Trading Strategy": "Create a comprehensive trading strategy for [MARKET/ASSET]. Include entry/exit criteria, risk management, and backtesting requirements.",
-            "PineScript Development": "Develop a PineScript indicator/strategy that [FUNCTIONALITY]. Include proper input parameters, plotting, and alert conditions.",
-            "Crypto Analysis": "Analyze [CRYPTOCURRENCY] from technical and fundamental perspectives. Include price predictions, market sentiment, and risk assessment."
+            "Bug Report": "Document a bug found in [SYSTEM]. Include steps to reproduce, expected behavior, actual behavior, and environment details.",
+            "API Design": "Design an API for [USE_CASE]. Specify endpoints, request/response formats, authentication method, and error handling.",
+            "Database Schema": "Create a database schema to support [APPLICATION]. Include tables, relationships, and indexing strategies.",
+            "Script Generator": "Generate a script in [LANGUAGE] to automate [TASK]. Include comments, input validation, and error handling.",
+            "Security Audit": "Perform a security audit on [SYSTEM/PROJECT]. Highlight vulnerabilities, recommend fixes, and assess risk level.",
+            "Pitch Deck": "Build a pitch deck for [STARTUP/PRODUCT] targeting [INVESTOR TYPE]. Include problem, solution, market size, traction, and business model.",
+            "Marketing Copy": "Write persuasive marketing copy for [PRODUCT]. Highlight unique selling points, benefits, and a clear call-to-action.",
+            "Brand Voice Guide": "Define a brand voice for [COMPANY]. Include tone, vocabulary, dos/don'ts, and example statements.",
+            "Campaign Strategy": "Develop a marketing campaign for [GOAL]. Define channels, timeline, KPIs, and creative direction.",
+            "User Persona": "Create a detailed persona for [PRODUCT]. Include demographics, behavior patterns, goals, and pain points.",
+            "Lesson Plan": "Design a lesson plan for [TOPIC] targeting [GRADE_LEVEL]. Include objectives, materials, and activity steps.",
+            "Quiz Generator": "Create a [FORMAT] quiz on [SUBJECT]. Include questions, answer options, and explanations for each correct answer.",
+            "Study Guide": "Develop a study guide for [TOPIC]. Cover key concepts, summaries, definitions, and practice exercises.",
+            "Concept Explanation": "Explain [TOPIC] in simple terms for [AUDIENCE]. Use analogies, visuals, and examples to aid understanding.",
+            "Curriculum Outline": "Create a curriculum for [SUBJECT] over [TIME_PERIOD]. Divide into modules with clear learning objectives.",
+            "Prompt Builder": "Design a reusable prompt for [MODEL_TYPE] to perform [TASK]. Ensure clarity, specificity, and modularity.",
+            "Chain-of-Thought Prompt": "Create a CoT prompt that walks through [PROBLEM TYPE]. Encourage stepwise reasoning and error checks.",
+            "System Message Template": "Write a system prompt for an AI assistant specializing in [DOMAIN]. Define tone, rules, and limits.",
+            "Few-Shot Prompt": "Build a few-shot learning prompt for [TASK]. Include diverse examples, clear input/output separation, and task framing.",
+            "Critique Prompt": "Generate a prompt that makes the model critique [CONTENT_TYPE] for quality, clarity, and relevance.",
+            "Meeting Agenda": "Create an agenda for a meeting on [TOPIC]. Include objectives, discussion points, and time allocations.",
+            "Workflow Optimization": "Design an optimized workflow for [PROCESS]. Identify bottlenecks, propose automation, and assign roles.",
+            "Email Template": "Write a professional email for [SCENARIO]. Maintain clarity, proper tone, and include key points.",
+            "Checklist": "Build a checklist for [ACTIVITY]. Ensure all critical steps are listed and sequenced logically.",
+            "SOP Document": "Write a Standard Operating Procedure for [TASK]. Include purpose, scope, responsibilities, and step-by-step actions.",
+            "Research Summary": "Summarize findings from [STUDY_TYPE] on [TOPIC]. Highlight objectives, methods, results, and implications.",
+            "Lab Report": "Write a lab report for [EXPERIMENT]. Include hypothesis, setup, observations, data analysis, and conclusion.",
+            "Technical Specification": "Draft a technical spec for [PRODUCT/SYSTEM]. Cover features, design constraints, materials, and standards.",
+            "Patent Abstract": "Write a concise patent abstract for [INVENTION]. Clearly state novelty, functionality, and potential applications.",
+            "Scientific Proposal": "Develop a proposal for a study on [TOPIC]. Include background, research question, methodology, and expected impact."
         }
         
         template_name, ok = QMessageBox.question(
@@ -1287,19 +1279,11 @@ class MainWindow(QMainWindow):
     
     def show_about(self):
         QMessageBox.about(self, "About", 
-                         "Enhanced AI Prompt Engineer V1.0 By xeQted 2025\n\n"
+                         "Prompt Engineer V1.0 Made By xeQter 2025.\n\n"
                          "Professional prompt engineering toolkit with advanced "
-                         "enhancement capabilities for ChatGPT, Claude, Gemini, "
-                         "and other AI platforms.\n\n"
-                         "Features:\n"
-                         "• 500+ enhancement keywords\n"
-                         "• Platform-specific optimizations\n"
-                         "• Industry-specific terminology\n"
-                         "• Advanced prompt engineering techniques\n"
-                         "• Auto-optimization capabilities\n"
-                         "• Template system\n"
-                         "• Category dropdown selection\n"
-                         "• Comprehensive search and filtering")
+                         "enhancement capabilities for:\nChatGPT, Claude, Gemini, "
+                         "Grok3, and other AI platforms.\n\n"
+                         "Features: \nWORK IN PROGRESS! MORE WILL COME SOON")
     
     def update_status(self):
         total_prompts = len(self.storage.prompts)
@@ -1316,8 +1300,8 @@ def main():
     app.setStyle('Fusion')
     
     # Set application properties
-    app.setApplicationName("Enhanced AI Prompt Manager")
-    app.setApplicationVersion("2.1")
+    app.setApplicationName("Prompt Engineer - Made By xeQted")
+    app.setApplicationVersion("1.0")
     app.setOrganizationName("Prompt Engineering Solutions")
     
     window = MainWindow()
